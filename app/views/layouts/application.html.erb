@@ -6,9 +6,21 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
-</body>
+	<body>
+		<div id='header'>
+			<ul>
+				<li><%= link_to 'Home', root_path %></li>
+				<li><%= link_to 'Students', students_path %></li>
+			</ul>
+		</div>
+	
+		<%= yield %>
+		<div id='footer'>
+			<ul>
+				<li><%= link_to 'Copyright', '#' %></li>
+				<li><%= link_to 'Contact Us', '#' %></li>
+			</ul>
+		</div>
+	
+	</body>
 </html>

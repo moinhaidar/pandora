@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.3'
 gem 'mysql2'
 
-gem 'haml-rails', '0.3.4'
+#gem 'haml-rails', '0.3.4'
 gem 'jquery-rails'
 
 group :development, :test do
