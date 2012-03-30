@@ -1,0 +1,11 @@
+.DS_Store
+.bundle
+db/*.sqlite3
+log/*.log
+log/*.log.*
+tmp/
+.sass-cache/
+.rake_tasks~
+config/*.yml
+coverage
+.project
