@@ -1,1 +1,11 @@
 == Welcome to Pandora
+
+= Setup App
+
+* setup database.yml, see database.yml.example 
+* rake db:setup
+* rake db:migrate
+* rake db:seed
+
+= Spec
+* Run rake db:setup RAILS_ENV=test

@@ -1,5 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<p><b>Studnet</b></p>
+<br />
 
+<% if @student %>
+	<div>Name : <%= @student.name %></div>
+	<div>Email : <%= @student.email %></div>
+	<div>Address : <%= @student.address %></div>
+	<div>Mobile : <%= @student.mobile %></div>
+	<div>Phpne : <%= @student.phone %></div>
+	<div>Active : <%= @student.active? %></div>
+<% else %>
+	Nothing Found
+<% end -%>
+<br />
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>

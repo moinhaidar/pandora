@@ -1,14 +1,23 @@
 <h1>Listing students</h1>
-
-<table>
+<br />
+<table border='1' cellpadding="5" cellspacing="0" width='100%'>
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Mobile</th>
+    <th>Phone</th>
+    <th>Active</th>
   </tr>
 
 <% @students.each do |student| %>
   <tr>
+  	<td><%= student.name %></td>
+  	<td><%= student.email %></td>
+  	<td><%= student.address %></td>
+  	<td><%= student.mobile %></td>
+  	<td><%= student.phone %></td>
+  	<td><%= student.active? %></td>
     <td><%= link_to 'Show', student %></td>
     <td><%= link_to 'Edit', edit_student_path(student) %></td>
     <td><%= link_to 'Destroy', student, confirm: 'Are you sure?', method: :delete %></td>
@@ -18,4 +27,4 @@
 
 <br />
 
-<%= link_to 'New Student', new_student_path %>
+<b><%= link_to 'New Student', new_student_path %></b>

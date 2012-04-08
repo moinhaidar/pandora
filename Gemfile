@@ -8,6 +8,7 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails', '2.7.0'
+  gem 'factory_girl_rails', '~> 1.3.0'
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
 end
