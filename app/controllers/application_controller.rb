@@ -30,9 +30,11 @@ class ApplicationController < ActionController::Base
       # Now we can define appropriate logic according to range of octet[1], octet[2], octet[2], octet[3]
       # Example
       if octet > 99
-        redirect_to students_path
+        redirect_to students_path && return
+      elsif octet < 99 && octet > 55
+        redirect_to teachers_path && return
       else
-        redirect_to teachers_path
+        redirect_to root_path && return
       end
     end
     
