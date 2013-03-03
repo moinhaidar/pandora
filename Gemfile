@@ -5,7 +5,6 @@ gem 'mysql2'
 gem 'active_scaffold'
 
 #gem 'haml-rails', '0.3.4'
->>>>>>> 26977e40c668bd65465662efab77e91f795e8ad5
 gem 'jquery-rails'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'

@@ -5,7 +5,7 @@
 // the compiled file.
 //
 // MOIN: Commenting jquery to make active scaffold working
-// require jquery
+//= require jquery
 //= require jquery_ujs
 //= require_tree .
 //= require active_scaffold

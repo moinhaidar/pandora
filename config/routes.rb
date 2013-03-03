@@ -1,6 +1,5 @@
 Pandora::Application.routes.draw do
   
-<<<<<<< HEAD
   resources :holidays do as_routes end
 
   resources :students do as_routes end
@@ -9,18 +8,11 @@ Pandora::Application.routes.draw do
   resources :subjects  do as_routes end
   resources :schedules  do as_routes end
   resources :attendances 
-=======
+  
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :students
-  resources :teachers 
-  resources :classrooms
-  resources :subjects
-  resources :schedules
-  resources :attendances
->>>>>>> 26977e40c668bd65465662efab77e91f795e8ad5
   resources :notes, :only => [:index]
 
   # The priority is based upon order of creation:
