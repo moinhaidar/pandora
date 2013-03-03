@@ -4,6 +4,7 @@
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
  *= require_tree . 
+ *= require active_scaffold
 */
 
 html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, div {margin: 0; padding: 0;}

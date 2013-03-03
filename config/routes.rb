@@ -1,11 +1,13 @@
 Pandora::Application.routes.draw do
   
-  resources :students
-  resources :teachers 
-  resources :classrooms
-  resources :subjects
-  resources :schedules
-  resources :attendances
+  resources :holidays do as_routes end
+
+  resources :students do as_routes end
+  resources :teachers  do as_routes end 
+  resources :classrooms  do as_routes end
+  resources :subjects  do as_routes end
+  resources :schedules  do as_routes end
+  resources :attendances 
   resources :notes, :only => [:index]
 
   # The priority is based upon order of creation:
