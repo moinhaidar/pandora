@@ -5,7 +5,10 @@ gem 'mysql2'
 gem 'active_scaffold'
 
 #gem 'haml-rails', '0.3.4'
+>>>>>>> 26977e40c668bd65465662efab77e91f795e8ad5
 gem 'jquery-rails'
+gem 'activeadmin'
+gem "meta_search",    '>= 1.1.0.pre'
 
 group :development, :test do
   gem 'rspec-rails', '2.7.0'
@@ -14,12 +17,11 @@ group :development, :test do
   gem 'turn', '~> 0.8.3', :require => false
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
+# Gems used only for assets and not required in production environments by default.
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
-  #gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.0.3'
 end
 
 # To use ActiveModel has_secure_password
