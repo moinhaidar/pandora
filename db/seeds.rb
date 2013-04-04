@@ -9,14 +9,14 @@
 Student.find_or_create_by_email('moinhaidar@gmail.com') do |s|
   s.first_name = 'Moin'
   s.last_name = 'Haidar'
-  s.mobile = '8121783479'
+  s.mobile = '9999728238'
   s.active = true
 end
 
 Teacher.find_or_create_by_email('moinhaidar@gmail.com') do |t|
   t.first_name = 'Moin'
   t.last_name = 'Haidar'
-  t.mobile = '8121783479'
+  t.mobile = '9999728238'
   t.active = true
 end
 

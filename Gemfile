@@ -4,7 +4,8 @@ gem 'rails', '3.2.12'
 gem 'mysql2'
 gem 'jquery-rails'
 gem 'activeadmin'
-gem "meta_search",    '>= 1.1.0.pre'
+gem "meta_search",    '>= 1.1.0.pre'  # activeadmin dep
+gem 'coffee-script-source', '~> 1.4.0' #"cannot return a value from a constructor" fix
 
 group :development, :test do
   gem 'rspec-rails', '2.7.0'
