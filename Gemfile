@@ -2,6 +2,9 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'mysql2'
+gem 'active_scaffold'
+
+#gem 'haml-rails', '0.3.4'
 gem 'jquery-rails'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'  # activeadmin dep
